@@ -48,43 +48,27 @@
     revealEls.forEach((el) => el.classList.add("is-visible"));
   }
 
-  /* ---------- Product video: click-to-play with sound ---------- */
-  const videoFrame = document.getElementById("videoFrame");
+  /* ---------- Product video: embedded, always playing — sound is opt-in ---------- */
   const mainVideo = document.getElementById("mainVideo");
-  const playBtn = document.getElementById("playBtn");
+  const soundToggle = document.getElementById("soundToggle");
 
-  const playMainVideo = () => {
-    videoFrame.classList.add("is-playing");
-    mainVideo.muted = false;
-    mainVideo.play().catch(() => {
-      mainVideo.muted = true;
-      mainVideo.play();
-    });
-  };
-
-  playBtn.addEventListener("click", playMainVideo);
-  mainVideo.addEventListener("click", () => {
-    if (mainVideo.paused) {
-      mainVideo.play();
-      videoFrame.classList.add("is-playing");
-    } else {
-      mainVideo.pause();
-      videoFrame.classList.remove("is-playing");
-    }
-  });
-  mainVideo.addEventListener("ended", () => {
-    videoFrame.classList.remove("is-playing");
+  soundToggle.addEventListener("click", () => {
+    mainVideo.muted = !mainVideo.muted;
+    soundToggle.classList.toggle("is-on", !mainVideo.muted);
+    soundToggle.setAttribute("aria-label", mainVideo.muted ? "Sesi aç" : "Sesi kapat");
   });
 
-  /* Pause the hero background loop + product video when off-screen to save resources */
-  const heroVideo = document.querySelector(".hero-video-wrap video");
-  if ("IntersectionObserver" in window && heroVideo) {
-    const heroIo = new IntersectionObserver((entries) => {
+  /* Autoplay both embedded videos only while on screen — saves resources
+     and keeps them muted again once they scroll away, since browsers
+     block unmuted autoplay outside a user gesture anyway. */
+  const autoplayVideos = document.querySelectorAll(".hero-video-wrap video, #mainVideo");
+  if ("IntersectionObserver" in window) {
+    const videoIo = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) heroVideo.play().catch(() => {});
-        else heroVideo.pause();
+        if (entry.isIntersecting) entry.target.play().catch(() => {});
+        else entry.target.pause();
       });
     }, { threshold: 0.05 });
-    heroIo.observe(heroVideo);
+    autoplayVideos.forEach((v) => videoIo.observe(v));
   }
 })();

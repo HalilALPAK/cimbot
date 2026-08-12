@@ -33,4 +33,4 @@ assets/img/           Favicon ve video poster (SVG)
 
 ## Düzenlenmesi gerekenler
 
-`index.html` içindeki iletişim bölümünde yer alan telefon numarası (`+90 5xx xxx xx xx`) bir yer tutucudur — gerçek numarayla değiştirilmelidir. E-posta (`iletisim@cimbot.com`) ve website (`www.cimbot.com`) de gerçek adreslerle güncellenmelidir.
+İletişim bölümündeki e-posta ve telefon güncel. Website adresi (`www.cimbot.com`) şu an temsili — gerçek bir alan adı alınırsa `index.html` içindeki ilgili yerlerden güncellenmeli.
