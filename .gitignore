@@ -1,0 +1,7 @@
+# Kaynak sunum dosyası (siteye dahil değil)
+CIMBOT~1.pptx
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/

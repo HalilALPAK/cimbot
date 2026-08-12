@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ÇİMBOT — Akıllı Bahçe Teknolojisi | Otonom Çim Biçme Robotu</title>
+<meta name="description" content="ÇİMBOT: Mobil kontrollü ve tamamen otonom çim biçme robotu. Telefonundan bir dokunuşla kusursuz çim — zahmetsiz, sessiz, kablosuz.">
+
+<meta property="og:title" content="ÇİMBOT — Akıllı Bahçe Teknolojisi">
+<meta property="og:description" content="Mobil kontrollü ve otonom çim biçme robotu. Telefonundan bir dokunuşla kusursuz çim.">
+<meta property="og:type" content="website">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="container">
+    <a href="#top" class="brand">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M5 8l-2-2M19 8l2-2M4 14a8 8 0 0 1 16 0c0 3-2 5-2 7H6c0-2-2-4-2-7Z"/><path d="M9 21h6"/></svg>
+      </span>
+      ÇİMBOT
+    </a>
+
+    <nav class="nav-links">
+      <a href="#problem">Problem</a>
+      <a href="#cozum">Çözüm</a>
+      <a href="#video">Video</a>
+      <a href="#ozellikler">Özellikler</a>
+      <a href="#guvenlik">Güvenlik</a>
+      <a href="#pazar">Pazar</a>
+      <a href="#iletisim">İletişim</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="#video" class="btn btn-ghost">Videoyu İzle</a>
+      <a href="#iletisim" class="btn btn-primary">İletişime Geç</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menüyü aç">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#problem">Problem</a>
+  <a href="#cozum">Çözüm</a>
+  <a href="#video">Video</a>
+  <a href="#ozellikler">Özellikler</a>
+  <a href="#guvenlik">Güvenlik</a>
+  <a href="#pazar">Pazar</a>
+  <a href="#iletisim">İletişim</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-glow g1"></div>
+  <div class="hero-glow g2"></div>
+
+  <div class="hero-video-wrap">
+    <video autoplay muted loop playsinline poster="assets/img/poster.svg">
+      <source src="assets/video/cimbot-tanitim.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="container hero-content">
+    <div class="hero-badge reveal is-visible">
+      <span class="dot"></span> Yatırımcı Tanıtım Sunumu
+    </div>
+
+    <h1 class="reveal is-visible">Akıllı bahçe teknolojisi: <em>kendi kendine biçen</em> çim robotu</h1>
+
+    <p class="hero-lede reveal is-visible">Telefonundan bir dokunuşla kusursuz çim — zahmetsiz, sessiz, kablosuz. ÇİMBOT, bahçe bakımını tamamen otomatiğe alır.</p>
+
+    <div class="hero-cta reveal is-visible">
+      <a href="#video" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+        Tanıtım Videosunu İzle
+      </a>
+      <a href="#iletisim" class="btn btn-ghost">Yatırımcı Görüşmesi Talep Et</a>
+    </div>
+
+    <div class="hero-stats reveal is-visible">
+      <div class="hero-stat"><strong>100%</strong><span>Telefondan kontrol</span></div>
+      <div class="hero-stat"><strong>60 dk</strong><span>Tek şarjla çalışma</span></div>
+      <div class="hero-stat"><strong>0</strong><span>Benzin, koku, duman</span></div>
+      <div class="hero-stat"><strong>7/24</strong><span>Otonom güvenlik</span></div>
+    </div>
+  </div>
+
+  <div class="scroll-cue"><span class="line"></span>Kaydır</div>
+</section>
+
+<!-- ============ PROBLEM ============ -->
+<section class="problem section-pad" id="problem">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Problem</div>
+      <h2 class="section-title">Çim biçmek <em>zaman ve emek</em> çalıyor</h2>
+      <p class="section-sub">Bahçe sahipleri her yıl çim bakımına ciddi zaman ve bütçe ayırıyor — ve bu her hafta tekrarlanıyor.</p>
+    </div>
+
+    <div class="grid-3 stagger">
+      <div class="card reveal" style="--i:0">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        </div>
+        <h3>Saatler kayıp</h3>
+        <p>Her hafta bahçeyle uğraşmak zamanınızı yiyor.</p>
+      </div>
+      <div class="card reveal" style="--i:1">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <h3>Yüksek masraf</h3>
+        <p>Bahçıvan ücreti ve benzinli makine gideri katlanıyor.</p>
+      </div>
+      <div class="card reveal" style="--i:2">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/><path d="M12 9v4M12 17h.01"/></svg>
+        </div>
+        <h3>Yorucu ve tehlikeli</h3>
+        <p>Gürültülü, tekrarlı ve kazaya açık bir iş.</p>
+      </div>
+    </div>
+
+    <div class="problem-banner reveal">
+      <strong>20+ saat</strong>
+      <p>Bahçe sahipleri her yıl çim bakımına ortalama 20&#43; saat ve ciddi bir bütçe ayırıyor.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ÇÖZÜM ============ -->
+<section class="solution section-pad" id="cozum">
+  <div class="container solution-grid">
+    <div class="solution-visual reveal">
+      <div class="ring r1"></div>
+      <div class="ring r2"></div>
+      <svg class="bot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="9" width="18" height="10" rx="3"/>
+        <circle cx="8" cy="19" r="1.6" fill="currentColor" stroke="none"/>
+        <circle cx="16" cy="19" r="1.6" fill="currentColor" stroke="none"/>
+        <path d="M7 9V7a5 5 0 0 1 10 0v2"/>
+        <circle cx="12" cy="13.5" r="2.2"/>
+        <path d="M12 3v1.6"/>
+      </svg>
+    </div>
+
+    <div class="solution-copy">
+      <div class="eyebrow reveal">Çözüm</div>
+      <h2 class="section-title reveal">Sen keyfini çıkar, gerisini <em>ÇİMBOT</em> halletsin.</h2>
+      <p class="section-sub reveal">Kendi kendine biçen akıllı robot — bölgeni bir kere tanımla, gerisini ona bırak.</p>
+
+      <ul class="solution-list stagger">
+        <li class="reveal" style="--i:0">
+          <span class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></span>
+          <div><h4>Telefondan tam kontrol</h4><p>Wi-Fi ve Bluetooth ile robotu her yerden yönet.</p></div>
+        </li>
+        <li class="reveal" style="--i:1">
+          <span class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M3 5v7h7"/></svg></span>
+          <div><h4>Otonom biçme</h4><p>Belirlediğin bölgeyi kendi başına, düzenli biçer.</p></div>
+        </li>
+        <li class="reveal" style="--i:2">
+          <span class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5l-8-3Z"/><path d="m9.5 12 2 2 3.5-4"/></svg></span>
+          <div><h4>Akıllı güvenlik</h4><p>Engelleri algılar, tehlikede otomatik durur.</p></div>
+        </li>
+      </ul>
+
+      <div class="stat-strip stagger">
+        <div class="stat-chip reveal" style="--i:0"><strong>100%</strong><span>Telefondan kontrol</span></div>
+        <div class="stat-chip reveal" style="--i:1"><strong>Sessiz</strong><span>Elektrikli, temiz çalışma</span></div>
+        <div class="stat-chip reveal" style="--i:2"><strong>Kablosuz</strong><span>Şarjlı &amp; taşınabilir</span></div>
+        <div class="stat-chip reveal" style="--i:3"><strong>0</strong><span>Benzin, koku, duman yok</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VIDEO SHOWCASE ============ -->
+<section class="video-section section-pad" id="video">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow">Tanıtım Filmi</div>
+      <h2 class="section-title">ÇİMBOT'u <em>parça parça</em> keşfedin</h2>
+      <p class="section-sub">Sinematik tanıtım videomuzda ÇİMBOT'un tasarımını, sensörlerini ve otonom biçme sürecini yakından izleyin.</p>
+    </div>
+
+    <div class="video-frame reveal" id="videoFrame">
+      <video id="mainVideo" playsinline preload="metadata" poster="assets/img/poster.svg">
+        <source src="assets/video/cimbot-tanitim.mp4" type="video/mp4">
+      </video>
+      <button class="video-play-btn" id="playBtn" aria-label="Videoyu oynat">
+        <span class="circle">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+        </span>
+        <span class="cue">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+          Sesli izlemek için tıkla
+        </span>
+      </button>
+    </div>
+
+    <div class="video-chapters stagger">
+      <div class="chapter-chip reveal" style="--i:0"><span class="n">1</span> Tasarım &amp; gövde</div>
+      <div class="chapter-chip reveal" style="--i:1"><span class="n">2</span> Sensörler &amp; algılama</div>
+      <div class="chapter-chip reveal" style="--i:2"><span class="n">3</span> Otonom biçme</div>
+      <div class="chapter-chip reveal" style="--i:3"><span class="n">4</span> Mobil uygulama</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ÖZELLİKLER ============ -->
+<section class="section-pad" id="ozellikler">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow">Özellikler</div>
+      <h2 class="section-title">Her şey <em>kutunun içinde</em></h2>
+      <p class="section-sub">ÇİMBOT, modern bahçenin ihtiyaç duyduğu her şeyi tek bir kompakt robotta birleştirir.</p>
+    </div>
+
+    <div class="grid-6 stagger">
+      <div class="card reveal" style="--i:0">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div>
+        <h3>Mobil Kontrol</h3>
+        <p>Wi-Fi &amp; Bluetooth ile anlık yönetim.</p>
+      </div>
+      <div class="card reveal" style="--i:1">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M3 5v7h7"/></svg></div>
+        <h3>Otonom Biçme</h3>
+        <p>Tanımlı bölgeyi düzenli biçer.</p>
+      </div>
+      <div class="card reveal" style="--i:2">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5l-8-3Z"/><path d="m9.5 12 2 2 3.5-4"/></svg></div>
+        <h3>Akıllı Güvenlik</h3>
+        <p>Engel algılama ve otomatik durma.</p>
+      </div>
+      <div class="card reveal" style="--i:3">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="7" width="14" height="10" rx="2"/><path d="M20 10h2v4h-2"/><path d="M10 10.5 8.5 12l2.5 2-1 2 3.5-3.5-2.5-2Z" fill="currentColor" stroke="none"/></svg></div>
+        <h3>Şarjlı Güç</h3>
+        <p>Kablosuz, yedek bataryayla kesintisiz.</p>
+      </div>
+      <div class="card reveal" style="--i:4">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 9.5 17 9.5s-4.6.5-6 2c-1 1-.5 3 .5 3.5"/><path d="M17 9.5c1 1.5 1 4-1 6-1.2 1.2-3 2-5 2"/></svg></div>
+        <h3>Çevreci</h3>
+        <p>Elektrikli, sessiz, sıfır emisyon.</p>
+      </div>
+      <div class="card reveal" style="--i:5">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="6" width="16" height="12" rx="2.5"/><path d="M9 6V4.5A1.5 1.5 0 0 1 10.5 3h3A1.5 1.5 0 0 1 15 4.5V6"/></svg></div>
+        <h3>Kompakt Tasarım</h3>
+        <p>Dar alanlara uygun, hafif gövde.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NASIL ÇALIŞIR ============ -->
+<section class="section-pad">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow">Nasıl Çalışır</div>
+      <h2 class="section-title">Üç adımda <em>kusursuz çim</em></h2>
+    </div>
+
+    <div class="steps">
+      <div class="step reveal" style="--i:0">
+        <div class="step-num">01</div>
+        <h3>Bölgeni işaretle</h3>
+        <p>Uygulamadan biçilecek alanı belirle.</p>
+        <span class="step-arrow"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
+      <div class="step reveal" style="--i:1">
+        <div class="step-num">02</div>
+        <h3>Başlat'a dokun</h3>
+        <p>Robot bölgeyi otonom biçmeye başlar.</p>
+        <span class="step-arrow"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
+      <div class="step reveal" style="--i:2">
+        <div class="step-num">03</div>
+        <h3>Keyfini çıkar</h3>
+        <p>Sen dinlen, robot işini bitirsin.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GÜVENLİK ============ -->
+<section class="safety section-pad" id="guvenlik">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Güvenlik</div>
+      <h2 class="section-title">Akıllı ve <em>güvenli</em> tasarım</h2>
+      <p class="section-sub">İnsan, evcil hayvan ve engellerin çevresinde güvenle çalışır.</p>
+    </div>
+
+    <div class="safety-grid stagger">
+      <div class="safety-item reveal" style="--i:0">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5l-8-3Z"/><circle cx="12" cy="10" r="1.5"/><path d="M12 10v3"/></svg></div>
+        <div><h3>GPS bölge tanımlama</h3><p>Sadece belirlediğin alanı biçer, dışına çıkmaz.</p></div>
+      </div>
+      <div class="safety-item reveal" style="--i:1">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
+        <div><h3>Engel &amp; ağaç algılama</h3><p>Sensörlerle önündeki engelleri fark eder.</p></div>
+      </div>
+      <div class="safety-item reveal" style="--i:2">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9l6 6M15 9l-6 6"/></svg></div>
+        <div><h3>Otomatik bıçak durdurma</h3><p>Kaldırılınca veya devrilince anında durur.</p></div>
+      </div>
+      <div class="safety-item reveal" style="--i:3">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/><path d="M12 9v4M12 17h.01"/></svg></div>
+        <div><h3>Acil durdurma</h3><p>Bağlantı kesilirse robot güvenle durur.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GÜÇ & ÖZGÜRLÜK ============ -->
+<section class="section-pad">
+  <div class="container power-grid">
+    <div class="power-hero reveal">
+      <strong>60<span style="font-size:0.4em;">dk</span></strong>
+      <span class="unit">Tek şarjla varan çalışma süresi</span>
+      <p>Yedek bataryayla saniyeler içinde takas — beklemeden devam.</p>
+    </div>
+
+    <div>
+      <div class="eyebrow reveal">Güç &amp; Özgürlük</div>
+      <h2 class="section-title reveal">Kablosuz, <em>kesintisiz</em></h2>
+      <div class="power-list stagger" style="margin-top:28px;">
+        <div class="safety-item reveal" style="--i:0">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg></div>
+          <div><h3>Hızlı şarj</h3><p>Kısa sürede tekrar sahaya.</p></div>
+        </div>
+        <div class="safety-item reveal" style="--i:1">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="18" height="10" rx="2"/><path d="M22 10v4"/></svg></div>
+          <div><h3>Yedek batarya</h3><p>İkinci paketle kesintisiz çalışma.</p></div>
+        </div>
+        <div class="safety-item reveal" style="--i:2">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="M17 8a5 5 0 0 1 0 8" opacity="0.35"/><line x1="17" y1="4" x2="3" y2="20"/></svg></div>
+          <div><h3>Sessiz çalışma</h3><p>Komşuyu rahatsız etmez.</p></div>
+        </div>
+        <div class="safety-item reveal" style="--i:3">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 9.5 17 9.5s-4.6.5-6 2c-1 1-.5 3 .5 3.5"/></svg></div>
+          <div><h3>Sıfır emisyon</h3><p>Benzin yok, koku yok, duman yok.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEDEN FARKLI ============ -->
+<section class="section-pad">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow">Neden Farklı</div>
+      <h2 class="section-title">Geleneksel yöntemlere göre <em>üstün</em></h2>
+    </div>
+
+    <div class="compare-wrap reveal">
+      <table class="compare">
+        <thead>
+          <tr>
+            <th>Karşılaştırma</th>
+            <th>Geleneksel</th>
+            <th class="col-cimbot">ÇİMBOT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Maliyet</td>
+            <td><span class="row-icon neutral"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/></svg>Pahalı bahçıvan veya benzinli makine</span></td>
+            <td class="col-cimbot"><span class="row-icon good"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Uygun fiyatlı, düşük işletme gideri</span></td>
+          </tr>
+          <tr>
+            <td>Çalışma şekli</td>
+            <td><span class="row-icon neutral"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/></svg>Gürültülü, kokulu, kirli çalışma</span></td>
+            <td class="col-cimbot"><span class="row-icon good"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Sessiz, temiz, sıfır emisyon</span></td>
+          </tr>
+          <tr>
+            <td>Emek</td>
+            <td><span class="row-icon neutral"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/></svg>Zaman ve fiziksel emek gerektirir</span></td>
+            <td class="col-cimbot"><span class="row-icon good"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Tamamen otomatik — sıfır emek</span></td>
+          </tr>
+          <tr>
+            <td>Planlama</td>
+            <td><span class="row-icon neutral"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/></svg>Randevu ve planlamaya bağlı</span></td>
+            <td class="col-cimbot"><span class="row-icon good"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>7/24 telefonundan senin kontrolünde</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PAZAR FIRSATI ============ -->
+<section class="section-pad" id="pazar">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Pazar Fırsatı</div>
+      <h2 class="section-title">Hızla büyüyen bir <em>pazar</em></h2>
+      <p class="section-sub">Robot çim biçme makinesi pazarı, güçlü bir büyüme trendi içinde.</p>
+    </div>
+
+    <div class="market-grid stagger">
+      <div class="kpi-tile reveal" style="--i:0">
+        <div class="kpi-label">Yıllık büyüme oranı</div>
+        <div class="kpi-value">~%14
+          <span class="trend"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 10 10l4 4 7-7"/><path d="M15 6h6v6"/></svg>CAGR</span>
+        </div>
+        <p class="kpi-desc">Robot çim biçme makinesi pazarının küresel bileşik yıllık büyüme oranı.</p>
+      </div>
+      <div class="kpi-tile reveal" style="--i:1">
+        <div class="kpi-label">Küresel pazar büyüklüğü</div>
+        <div class="kpi-value">$20–30<span style="font-size:0.4em;">Milyar</span></div>
+        <p class="kpi-desc">2030'larda ulaşılması beklenen küresel pazar hacmi.</p>
+      </div>
+    </div>
+
+    <p class="market-source reveal">Kaynak: Mordor Intelligence, Grand View Research, GMinsights (2026 pazar analizleri).</p>
+  </div>
+</section>
+
+<!-- ============ HEDEF KİTLE ============ -->
+<section class="section-pad">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow">Hedef Kitle</div>
+      <h2 class="section-title">Kimler <em>için?</em></h2>
+    </div>
+
+    <div class="grid-4 stagger">
+      <div class="card audience-card reveal" style="--i:0">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 3l9 8"/><path d="M5 10v10h14V10"/></svg></div>
+        <h3>Ev bahçeleri</h3>
+        <p>Villalar ve müstakil ev sahipleri.</p>
+      </div>
+      <div class="card audience-card reveal" style="--i:1">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="7" height="18"/><rect x="13" y="8" width="7" height="13"/><path d="M7 7h1M7 11h1M7 15h1M16 12h1M16 16h1"/></svg></div>
+        <h3>Siteler &amp; rezidanslar</h3>
+        <p>Ortak yeşil alan yönetimi.</p>
+      </div>
+      <div class="card audience-card reveal" style="--i:2">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M5 9l7-6 7 6"/><path d="M8 12l4-4 4 4"/></svg></div>
+        <h3>Parklar &amp; yeşil alanlar</h3>
+        <p>Belediye ve kamusal alanlar.</p>
+      </div>
+      <div class="card audience-card reveal" style="--i:3">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V8l7-5 7 5v13"/><path d="M17 11l4 2v8"/><path d="M9 21v-4h2v4"/></svg></div>
+        <h3>Otel &amp; tesisler</h3>
+        <p>Geniş peyzaj bakımı.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DEĞER ÖNERİSİ ============ -->
+<section class="section-pad">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow">Değer Önerisi</div>
+      <h2 class="section-title">Neden ÇİMBOT <em>kazandırır</em></h2>
+    </div>
+
+    <div class="grid-4 stagger">
+      <div class="card reveal" style="--i:0">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <h3>Uygun fiyat</h3>
+        <p>İthal robot çim biçicilere kıyasla erişilebilir maliyet.</p>
+      </div>
+      <div class="card reveal" style="--i:1">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg></div>
+        <h3>Düşük işletme gideri</h3>
+        <p>Elektrikli çalışma; benzin ve bakım masrafı minimum.</p>
+      </div>
+      <div class="card reveal" style="--i:2">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div>
+        <h3>Ölçeklenebilir üretim</h3>
+        <p>Standart bileşenlerle kolay ve hızlı üretim.</p>
+      </div>
+      <div class="card reveal" style="--i:3">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 10 10l4 4 7-7"/><path d="M15 6h6v6"/></svg></div>
+        <h3>Büyüme potansiyeli</h3>
+        <p>Genişleyen akıllı bahçe pazarında güçlü konum.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ YOL HARİTASI ============ -->
+<section class="roadmap section-pad">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow">Yol Haritası</div>
+      <h2 class="section-title"><em>Vizyonumuz</em></h2>
+    </div>
+
+    <div class="timeline stagger">
+      <div class="tl-item reveal" style="--i:0">
+        <div class="tl-dot"></div>
+        <div class="tl-tag">Bugün</div>
+        <h3>Mobil kontrol + temel otonom biçme</h3>
+        <p>Telefon uygulamasıyla tam kontrol ve tanımlı alanda otonom çalışma.</p>
+      </div>
+      <div class="tl-item reveal" style="--i:1">
+        <div class="tl-dot"></div>
+        <div class="tl-tag">Yakında</div>
+        <h3>Tam otonom rota ve otomatik şarj istasyonu</h3>
+        <p>Kendi kendine rota planlama ve otomatik şarj istasyonuna dönüş.</p>
+      </div>
+      <div class="tl-item future reveal" style="--i:2">
+        <div class="tl-dot"></div>
+        <div class="tl-tag">Gelecek</div>
+        <h3>Çoklu robot filo yönetimi ve AI görüş sistemi</h3>
+        <p>Büyük alanlar için filo yönetimi ve yapay zeka destekli görüş sistemi.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA / İLETİŞİM ============ -->
+<section class="cta-section section-pad" id="iletisim">
+  <div class="container">
+    <div class="cta-box reveal">
+      <div class="eyebrow" style="justify-content:center;">ÇİMBOT</div>
+      <h2>Bahçelerin geleceğine <em style="color:var(--accent-500);font-style:normal;">ortak olun.</em></h2>
+      <p class="section-sub">Mobil kontrollü, otonom ve uygun fiyatlı çim biçme robotu — birlikte büyütelim.</p>
+
+      <div class="cta-actions">
+        <a href="mailto:iletisim@cimbot.com" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+          Bize Yazın
+        </a>
+        <a href="#top" class="btn btn-ghost">Sunumu Baştan İzle</a>
+      </div>
+    </div>
+
+    <div class="contact-grid stagger">
+      <a href="mailto:iletisim@cimbot.com" class="contact-card reveal" style="--i:0">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></div>
+        <div><div class="label">E-posta</div><div class="value">iletisim@cimbot.com</div></div>
+      </a>
+      <a href="tel:+905xxxxxxxxx" class="contact-card reveal" style="--i:1">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8.1 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2Z"/></svg></div>
+        <div><div class="label">Telefon</div><div class="value">+90 5xx xxx xx xx</div></div>
+      </a>
+      <a href="#top" class="contact-card reveal" style="--i:2">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
+        <div><div class="label">Website</div><div class="value">www.cimbot.com</div></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-row">
+      <a href="#top" class="brand">
+        <span class="brand-mark" style="width:28px;height:28px;">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M5 8l-2-2M19 8l2-2M4 14a8 8 0 0 1 16 0c0 3-2 5-2 7H6c0-2-2-4-2-7Z"/><path d="M9 21h6"/></svg>
+        </span>
+        ÇİMBOT
+      </a>
+      <nav class="footer-links">
+        <a href="#problem">Problem</a>
+        <a href="#cozum">Çözüm</a>
+        <a href="#ozellikler">Özellikler</a>
+        <a href="#guvenlik">Güvenlik</a>
+        <a href="#pazar">Pazar</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+    </div>
+    <p class="footer-note">© 2026 ÇİMBOT. Tüm hakları saklıdır. Bu site bir yatırımcı tanıtım sunumudur.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Yukarı çık">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
